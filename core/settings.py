@@ -106,6 +106,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# Custom user as default
+AUTH_USER_MODEL = "users.User"
+
 # Rest Framework Simple JWT
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
