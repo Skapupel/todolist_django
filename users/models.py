@@ -5,6 +5,11 @@ from .managers import UserManager
 
 
 class User(AbstractBaseUser, PermissionsMixin):
+    """
+    This is a User Model, that is used to create a table in the database.\n
+    
+    This model inherits from BaseUser model provided by django.
+    """
     username = models.CharField(max_length=50, unique=True)
     email = models.EmailField(unique=True)
     first_name = models.CharField(max_length=30)
@@ -19,4 +24,9 @@ class User(AbstractBaseUser, PermissionsMixin):
     objects = UserManager()
 
     def __str__(self):
+        """Returns a string representation of the User Model.
+
+        Returns:
+            str: returns a username
+        """
         return self.username
