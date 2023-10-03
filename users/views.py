@@ -6,7 +6,7 @@ from .serializers import UserSerializer
 
 class UserRegistrationView(generics.CreateAPIView):
     """
-    Concrete view for creating a model instance.
+    Registers a new user.
     """
     queryset = User.objects.all()
     serializer_class = UserSerializer
@@ -15,7 +15,7 @@ class UserRegistrationView(generics.CreateAPIView):
 
 class UserView(generics.RetrieveAPIView):
     """
-    Concrete view for retrieving a model instance.
+    Returns a current user object. Only authenticated users are allowed.
     """
     serializer_class = UserSerializer
     permission_classes = [IsAuthenticated]
