@@ -20,9 +20,9 @@ The .env file contains environment variables that are used to configure the appl
 ## Usage
 Once the server is running, you can access the API endpoints at `http://localhost:8000/`. The available endpoints are:
 
-* [POST] api/auth/login/ - Login a user and receive a token
-* [POST] api/auth/login/refresh/ - Refresh an authentication token
-* [POST] api/auth/register/ - Register a new user
-* [GET] api/user/ - Get user info
-* [GET, POST] api/user/todos/ - Get and create todos for a user
-* [GET, PATCH, DELETE, PUT] api/user/todos/\<int:id\>/ - Get, update and delete a todo item for a user
+* [POST] auth/login/ - Login a user and receive a token
+* [POST] auth/login/refresh/ - Refresh an authentication token
+* [POST] auth/register/ - Register a new user
+* [GET] auth/user/ - Get user info
+* [GET, POST] todos/ - Get and create todos for a user
+* [GET, PATCH, DELETE, PUT] todos/\<int:id\>/ - Get, update and delete a todo item for a user
