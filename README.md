@@ -15,7 +15,6 @@ The .env file contains environment variables that are used to configure the appl
 3. Configure .env File
 4. Create the database: `python manage.py migrate`
 5. Run the server: `python manage.py runserver`
-6. Swagger docs endpoint `http://localhost:8000/schema/swagger-ui/`
 
 ## Usage
 Once the server is running, you can access the API endpoints at `http://localhost:8000/`. The available endpoints are:
@@ -26,3 +25,6 @@ Once the server is running, you can access the API endpoints at `http://localhos
 * [GET] auth/user/ - Get user info
 * [GET, POST] todos/ - Get and create todos for a user
 * [GET, PATCH, DELETE, PUT] todos/\<int:id\>/ - Get, update and delete a todo item for a user
+
+## Documentation
+Once the server is running, you can access the API documentation at `http://localhost:8000/schema/swagger-ui/`
